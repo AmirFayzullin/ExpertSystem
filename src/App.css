@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -35,4 +36,87 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.node circle {
+  fill: rgb(247, 106, 214);
+  stroke: rgb(184, 37, 81);
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 11px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+  fill: black;
+}
+
+.node {
+  cursor: pointer;
+}
+
+body {
+  background-color: white;
+}
+
+span {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #F4F4F4;
+  text-shadow: 0 1px 4px black;
+  float: right;
+}
+
+.headerWrapper {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.treeWrapper {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+
+.startButton {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: var(--main-theme-color);
+  background-image: url("./assets/play.svg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .2s;
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.startButton:hover {
+  background-color: var(--main-theme-color-darken);
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+  -moz-transform: translate(-50%, -50%) scale(0.9);
+  -ms-transform: translate(-50%, -50%) scale(0.9);
+  -o-transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.executorWrapper {
+  z-index: 2;
+}
+
+.formPopupWrapper {
+  z-index: 2;
 }

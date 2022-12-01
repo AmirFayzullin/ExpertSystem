@@ -1,0 +1,43 @@
+.node__branch text,
+.node__leaf text,
+.node__root text
+{
+    fill: var(--text-color);
+}
+
+.node__root > circle,
+.node__branch > circle,
+.rd3t-leaf-node > circle {
+    stroke: transparent;
+}
+
+.node__root > circle {
+    fill: var(--main-theme-color);
+}
+
+.node__branch > circle {
+    fill: var(--main-theme-color);
+}
+
+.rd3t-leaf-node > circle {
+    fill: lightgreen;
+}
+
+
+.link {
+    stroke: var(--text-color) !important;
+    stroke-width: 2px;
+}
+
+.link__to-leaf {
+    stroke: #929292 !important;
+    stroke-width: 1.5px;
+}
+.link__to-branch {
+    stroke: var(--text-color) !important;
+    stroke-width: 1.5px;
+}
+
+.rd3t-label {
+
+}

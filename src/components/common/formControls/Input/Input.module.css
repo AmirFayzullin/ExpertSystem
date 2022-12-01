@@ -1,0 +1,73 @@
+.wrapper {
+    position: relative;
+    --transition-duration: .2s;
+    --inactive-color: hsla(0, 0%, 77%, 0.56);
+    width: 100%;
+    height: max-content;
+    padding: .5rem 6px;
+    border: solid 2px var(--text-color);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: var(--transition-duration);
+    -moz-transition: var(--transition-duration);
+    -ms-transition: var(--transition-duration);
+    -o-transition: var(--transition-duration);
+    transition: var(--transition-duration);
+    background: inherit;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.inputEl {
+    outline: none;
+    /*background: var(--bkg-color-l-3);*/
+    background: transparent;
+    color: var(--text-color);
+    user-select: text;
+    border: none;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.placeholder {
+    position: absolute;
+    background: inherit;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(5px, -50%);
+    -moz-transform: translate(5px, -50%);
+    -ms-transform: translate(5px, -50%);
+    -o-transform: translate(5px, -50%);
+    transform: translate(5px, -50%);
+    color: var(--text-color);
+    -webkit-transition: var(--transition-duration);
+    -moz-transition: var(--transition-duration);
+    -ms-transition: var(--transition-duration);
+    -o-transition: var(--transition-duration);
+    transition: var(--transition-duration);
+    display: flex;
+    align-items: center;
+    margin: 0;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+
+.wrapper.focused {
+    border-color: var(--main-theme-color);
+}
+
+.wrapper.focused .placeholder {
+    color: var(--main-theme-color);
+}
+
+.wrapper.filled .placeholder,
+.wrapper.focused .placeholder {
+    top: 0;
+    background: inherit;
+    -webkit-transform: translate(15px, -70%) scale(.85);
+    -moz-transform: translate(15px, -70%) scale(.85);
+    -ms-transform: translate(15px, -70%) scale(.85);
+    -o-transform: translate(15px, -70%) scale(.85);
+    transform: translate(15px, -70%) scale(.85);
+}

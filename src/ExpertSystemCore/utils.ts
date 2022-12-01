@@ -1,0 +1,1 @@
+export const genId = ():number => +(Math.random() * Math.pow(10, 10)).toFixed(0);

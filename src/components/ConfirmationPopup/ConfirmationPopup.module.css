@@ -1,0 +1,16 @@
+.message {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--bkg-color-l-2);
+    color: var(--text-color);
+    font-size: 25px;
+}
+
+.wrapper {
+    transform: scale(.5);
+    transition: .2s;
+}
+
+.wrapper.opened {
+    transform: scale(1);
+}

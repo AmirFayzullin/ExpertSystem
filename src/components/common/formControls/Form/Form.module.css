@@ -1,0 +1,35 @@
+.form {
+    padding: 10px;
+}
+
+.submit {
+    background: var(--main-theme-color);
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.submit:hover {
+    background: var(--main-theme-color-darken);
+}
+
+.submit.disabled {
+    background: var(--bkg-color-l-7);
+}
+
+.children {
+    min-height: 90%;
+    max-height: 90%;
+    overflow-y: scroll;
+}

@@ -1,0 +1,47 @@
+.inputWrapper {
+    height: 50px;
+    background: var(--bkg-color-l-4);
+}
+
+.input {
+    border-radius: 5px;
+    background: var(--bkg-color-l-6);
+    border: solid 2px transparent;
+    transition: .2s;
+    outline: none;
+    color: var(--text-color);
+    padding: 5px;
+}
+
+.input:focus {
+    border-color: var(--main-theme-color);
+}
+
+.options {
+    margin-top: 20px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: auto;
+    grid-gap: 15px;
+    height: 70%;
+}
+
+.add {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../assets/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.add:hover {
+    background-image: url("../../../assets/plus-active.svg");
+}

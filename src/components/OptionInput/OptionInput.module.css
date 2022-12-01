@@ -1,0 +1,38 @@
+.wrapper {
+    display: grid;
+    grid-template: auto / auto 30px;
+    grid-gap: 10px;
+    background: var(--bkg-color-l-4);
+}
+
+.input {
+    border-radius: 5px;
+    background: var(--bkg-color-l-6);
+    border: solid 2px transparent;
+    transition: .2s;
+    outline: none;
+    color: var(--text-color);
+    padding: 5px;
+}
+
+.input:focus {
+    border-color: var(--main-theme-color);
+}
+
+.removeButton {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    background: url("../../assets/trash.svg") no-repeat center;
+    background-size: 30px;
+
+}
+
+.removeButton:hover {
+    background-image: url("../../assets/trash-active.svg");
+}
