@@ -11,6 +11,7 @@ import {SavePopup} from "./components/SavePopup/SavePopup";
 import {ConfirmationPopup} from "./components/ConfirmationPopup/ConfirmationPopup";
 
 function App() {
+	// some changes
     const [core, setCore] = useState<ESCore | null>(null);
     const [optionId, setOptionId] = useState<number | null>(null);
     const [isFormPopupOpened, setIsFormPopupOpened] = useState<boolean>(false);
